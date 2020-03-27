@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/226d8db7c4.js" crossorigin="anonymous"></script>
+    <title>SaDuSunt EB</title>
+</head>
+<body>
+    <div class="top" id="">
+        <img src="img/komprimert/logo2.png" alt=" " class="top__img">
+        <img src="img/komprimert/sadusunt.png" alt=" " class="top__img">
+    </div>
+    <div class="sub">
+        <div class="sub__plassering"><a href="https://m.sadusunt.ml" class="link">SaDuSunt</a>&nbsp;>&nbsp;<a href="#" class="link">Forsiden</a></div>
+        <!--<div class="sub__login__container">
+            <form action="javascript:void(0);" onsubmit="login()" method="post" class="sub__login-form" autocomplete="off" autocapitalize="off" draggable="false" oninvalid="alert('Feil kode eller koden har utløpt.')">
+                <input type="text" class="sub__login-form-input" placeholder="Logg inn" id="code" name="code" required pattern="[0-9]{6,6}">
+                <button type="submit" class="sub__login-form-btn"><i class="fas fa-key"></i></button>
+            </form>
+        </div>-->
+    </div>
+    <div class="main-forside">
+<!--
+        <a href="./oppskrifter/" class="link redirect r1">Gå til oppskrifter</a>
+-->
+        <img src="img/komprimert/anineogsilje.jpg" alt=" " class="main__img r1 img">
+        <div class="main__tekst r2">
+            <p class="tittel">Hvem er vi?</p>
+            <p class="tekst">Vi går i 10. Klasse på Hellerasten skole og har valgfaget produksjon av varer og tjenester. Vi startet vår egen bedrift som heter “Sa du sunt?” Noe av det vi er mest opptatt av er kosthold og klima. Dette er grunnen til at ingen av oppskriftene våre er tilsatt sukker eller rødt kjøtt.</p>
+        </div>
+
+        <img src="img/komprimert/cookbookcover2.jpg" alt=" " class="main__img r3 img">
+        <a href="./oppskrifter/" class="main__img-line r4">
+            <img src="img/komprimert/food1.jpg" alt=" " class="main__img-line__imgs" id="fs1">
+            <img src="img/komprimert/food2.jpg" alt=" " class="main__img-line__imgs" id="fs2">
+            <img src="img/komprimert/food3.jpg" alt=" " class="main__img-line__imgs" id="fs3">
+            <img src="img/komprimert/food4.jpg" alt=" " class="main__img-line__imgs" id="fs4">
+        </a>
+        <div class="main__tekst r5">
+            <p class="tittel">Hva gj&oslash;r vi?</p>
+            <p class="tekst">Vi har produsert en sunn kokebok for barn og unge, med enkle oppskrifter uten rødt kjøtt. Målet med denne boka er å oppmuntre barn og unge til å lage sunn og god mat. For mange er det vanskelig å opprettholde et sunt kosthold i hverdagen. Det er fort gjort å slenge en Grandiosa i ovnen eller å kjøpe en burger på McDonalds når man er sulten. Vi skal vise deg hvor kort tid det faktisk tar å lage sunn og god mat i hverdagen som passer for hele familien. Boken inneholder 30 sunne og gode oppskrifter helt uten rødt kjøtt. 25% av overskuddet går til veldedighet i lokalsamfunnet.</p>
+        </div>
+
+        <img src="img/komprimert/anineogsilje-win.jpg" alt=" " class="main__img r6 img">
+        <div class="main__tekst r7">
+            <p class="tittel">Hvordan kom vi hit?</p>
+            <p class="tekst">Elevbedriften vår startet Høsten 2018. Etter 5 måneder med knallhard jobbing fikk vi endelig skrevet ferdig kokeboka. Etter det har vi deltatt i flere messer bla. GründerExpo og lokale messer.</p>
+        </div>
+
+    </div>
+    <div class="bottom">
+        <img src="img/komprimert/logoround.png" alt=" " class="bottom__img">
+        <div class="bottom__tekst-container">
+            <p class="bottom__title">SaDuSunt EB © 2020</p>
+            <p class="bottom__tekst">Noe som b&oslash;r fikses? <a class="bottom__tekst" href="https://sadusunt.ml/kontakt" >Send oss en mail</a></p>
+            <p class="bottom__tekst">Mer av Fredrik sitt arbeid <a class="bottom__tekst" href="https://github.com/fredrikstromlarsen">her</a></p>
+       </div>
+    </div>
+    <div class="nav">
+        <a class="nav__link" href="./sporsmal">SP&Oslash;RSM&Aring;L</a>
+        <a class="nav__link" href="./kjop">KJ&Oslash;P</a>
+        <a class="nav__link" href="./kontakt">KONTAKT</a>
+    </div>
+    <script type="text/javascript">
+    function login(){
+        (async () => {
+            var input = code;
+            var response = await fetch("https://www.authenticatorapi.com/Validate.aspx?Pin=" + input + "&SecretCode=vCQkQukGadddQfMFgVYZLAGkZGNVHYnQqFFTAQ7wEaaWDmxa6HKJjCeH3sQ2Nupz");
+            console.log(response.text()); // should print out "True" or "False"
+            if (response = "true") {
+                window.location.replace("https://m.sadusunt.ml/oppskrifter");
+                var authenticated = true;
+            }
+            else{
+                alert('Feil kode eller koden er utl&oslash;pt');
+                var authenticated = false;
+            }
+        })();} 
+    </script>
+</body>
+</html>
