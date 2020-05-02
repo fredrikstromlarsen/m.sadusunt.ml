@@ -5,10 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/226d8db7c4.js" crossorigin="anonymous" async defer></script>
+    <script src="https://kit.fontawesome.com/226d8db7c4.js" crossorigin="anonymous"></script>
     <title>SaDuSunt EB</title>
 </head>
 <body>
+
+
+<!-- FIXED -->
+
+<div class="popup_selger-background" id="selger">
+    <div class="popup_selger">
+        <span class="exit">&times;</span>
+        <h1>Vil du bli SaDuSunt-selger?</h1>
+        <p>Jobben til en SaDuSunt-selger er å selge kokeboka 'For godt til å være sunt'. For hver bok du selger vil du få 50kr av fortjenesten (30%). Du velger selv hvor mange bøker du vil selge, og når du vil selge dem.</p>
+        <a class="cta" target="_blank" rel="noopener noreferrer" href="sms:+4795307216, +4740097980?body=Hei, jeg vil bli SaDuSunt-Selger. Dere kan kontakte meg via (mail, mobilnr, etc.)"><i class="fas fa-comment-dollar"></i>&nbsp;Bli&nbsp;Selger</a>
+    </div>
+</div>
+
+
+<!-- RELATIVE -->
+
+
     <div class="top" id="">
         <img src="img/komprimert/logo2.png" alt=" " class="top__img">
         <img src="img/komprimert/sadusunt.png" alt=" " class="top__img">
@@ -79,6 +96,17 @@
                 var authenticated = false;
             }
         })();} 
+        
+        var modal = document.getElementById("selger");
+        var span = document.getElementsByClassName("exit")[0];
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
     </script>
 </body>
 </html>
